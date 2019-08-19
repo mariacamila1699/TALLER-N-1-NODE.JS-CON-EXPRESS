@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="bower_components/boostrap/dist/css/bootstrap.min.css")
+        title Document
+    body
+        h1 EJERCICIO #8
+        h2 TAMAÑOS
+        form(action="ejercicioOcho" method="POST")
+            input(type="number" name="array")
+            input(class="btn btn-danger" type="submit", value="Resultado")
+        h2 Los Numeros: #{numeros}
+        h2 Suma de los pares: #{sumaPares} 
+        h2 Suma de los impares: #{sumaImpares}
+        h2 No son Pares: #{cantPares}
+        h2 No son  Impares: #{cantImpares}

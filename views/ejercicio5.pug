@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="bower_components/boostrap/dist/css/bootstrap.min.css")
+        title Document
+    body
+        h1 EJERCICIO #5
+        form(action="ejercicioCinco" method="POST")
+            - for(var i = 1; i <= 10; i++) {
+                h2= "Digite un numero" + " " + i
+                input(type="number" name="num" + i)
+            - }
+            input(class="btn btn-danger" type="submit", value="Resultado")
+            
+        h3 el numero mayor es: #{numMayor}
+        h3 el numero menor es: #{numMenor}
+        h3 Resultado de pares: #{pares}
+        h3 Resultado de impares: #{impares}
+
+
+

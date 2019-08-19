@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="bower_components/boostrap/dist/css/bootstrap.min.css")
+        title Document
+    body
+        h1 EJERCICIO #3
+        form(action="ejercicioTres" method="POST")
+            - for(var i = 1; i <= 3; i++){
+                h2= "Digite elnumero" + " " + i
+                input(type="number" name="num" + i)
+            - }
+            input(class="btn btn-danger" type="submit", value="Resultado")
+            h4 el numero 1 es: #{re_num1}
+            h4 el numero 2 es: #{re_num2}
+            h4 el numero 3 es: #{re_num3}
